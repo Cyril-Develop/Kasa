@@ -1,0 +1,30 @@
+@import '../../sass/main.scss';
+
+.notFound{
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color: $color-secondary;
+    &_infos{
+        @include flex(column, center, center);
+        min-height: calc(100vh - 250px);
+        &_title{
+            font-weight: 700;
+            font-size: 288px;
+            @media screen and (max-width: 768px) {
+                font-size: 140px;    
+            }
+        }
+        &_content{
+            font-weight: 500;
+            font-size: clamp(20px, 4vw, 36px);
+            text-align: center;
+        }
+        &_return{
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            font-size: clamp(12px, 2.5vw, 18px);
+        }
+    }
+}
