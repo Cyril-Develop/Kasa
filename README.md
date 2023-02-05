@@ -8,7 +8,6 @@
 
 ## Technologies :
 
-### Front : 
 - React
 - Sass
 
