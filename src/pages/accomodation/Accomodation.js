@@ -8,29 +8,34 @@ import Footer from "../../components/footer/Footer";
 import Collapse from '../../components/collapse/Collapse';
 import greyStar from '../../assets/grey_star.png';
 import redStar from '../../assets/red_star.png';
-
+import NotFound from '../notFound/NotFound';
 
 export default function Accomodation() {
-	
+
 	const [imageSlider, setImageSlider] = useState([]);
 
-	const idAccomodation = useParams('id').id;
-	const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-	
-	useEffect(() => {
-		const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
-		setImageSlider(dataCurrentAccomodation[0].pictures);
-	}, [idAccomodation]);
+	const { id } = useParams();
+	const dataCurrentAccomodation = datas.filter(data => data.id === id);
 
-	const name = dataCurrentAccomodation[0].host.name.split(' '); 
+	useEffect(() => {
+		if (dataCurrentAccomodation.length > 0) {
+			setImageSlider(dataCurrentAccomodation[0].pictures);
+		}
+	}, [id, dataCurrentAccomodation]);
+
+	if (dataCurrentAccomodation.length === 0) {
+		return <NotFound />;
+	}
+
+	const name = dataCurrentAccomodation[0].host.name.split(' ');
 	const rating = dataCurrentAccomodation[0].rating;
-	const description  = dataCurrentAccomodation[0].description;
+	const description = dataCurrentAccomodation[0].description;
 	const equipments = dataCurrentAccomodation[0].equipments;
 
 	return (
 		<>
-			<Header/>
-			<Slider imageSlider={imageSlider}/>
+			<Header />
+			<Slider imageSlider={imageSlider} />
 			<main className="accomodation">
 				<div className="accomodation_content">
 					<div className="accomodation_content_infos">
@@ -52,7 +57,7 @@ export default function Accomodation() {
 							</div>
 							<img src={dataCurrentAccomodation[0].host.picture} alt="host of this accomodation" />
 						</div>
-							
+
 						<div className="accomodation_content_host_stars">
 							{[...Array(5)].map((star, index) => {
 								const ratingValue = index + 1;
@@ -65,14 +70,14 @@ export default function Accomodation() {
 				</div>
 				<div className="accomodation_collapse">
 					<div className="accomodation_collapse_item">
-						<Collapse title={'Description'} content={description} />	
+						<Collapse title={'Description'} content={description} />
 					</div>
 					<div className="accomodation_collapse_item">
-						<Collapse title={'Équipements'} content={equipments}/>
-					</div>	
+						<Collapse title={'Équipements'} content={equipments} />
+					</div>
 				</div>
 			</main>
-			<Footer/>
+			<Footer />
 		</>
 	)
 }
