@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
-		path: "/Kasa/",
+		path: "/Kasa",
 		element: <Home />
 	},
 	{

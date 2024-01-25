@@ -2,16 +2,11 @@
 
 .header{
     @include flex(row, space-between, center);
-    height: 68px;
-    max-width: 95%;
-    margin: 0 auto;
-    @media screen and (max-width: 900px){
-        height: 40px;
-    }
+    padding: 0 15px;
     img{
         height: 60%;
         @media screen and (max-width: 700px){
-            height: 40px;
+            height: 35px;
         }
     }
 }

@@ -4,7 +4,7 @@
     display: flex;
     gap: 50px;
     color: $color-secondary;
-    font-size: clamp(12px, 2.5vw, 24px);
+    font-size: clamp(16px, 2.5vw, 24px);
     @media screen and (max-width: 700px){
         gap: 20px;
     }

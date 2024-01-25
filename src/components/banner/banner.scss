@@ -3,13 +3,11 @@
 .banner{
     position: relative;
     @include flex;
-    border-radius: 25px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/home_cover.png');
     background-position: center;
     background-size: cover;
     height: 223px;
     padding: 20px;
-    max-width: 95%;
     margin: 43px auto;
     @media screen and (max-width: 550px){
         margin: 20px auto;
@@ -18,9 +16,7 @@
     &_about{
         position: relative;
         @include flex;
-        border-radius: 25px;
         height: 223px;
-        max-width: 95%;
         margin: 43px auto;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/about_cover.png');
         background-position: center;
@@ -34,6 +30,7 @@
         color: $color-primary;
         font-size: clamp(20px, 4vw, 48px);
         font-weight: 500;
+        text-align: center;
     }
 }
 

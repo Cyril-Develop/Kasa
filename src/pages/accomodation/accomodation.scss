@@ -4,8 +4,7 @@
     &_content{
         @include flex(row, space-between, flex-start);
         color: $color-secondary;
-        width: 95%;
-        margin: 0 auto;
+        padding: 0 15px;
         @media screen and (max-width: 650px){
             @include flex(column, space-between, flex-start);   
             gap: 10px;   
@@ -15,24 +14,25 @@
             flex-direction: column;
             gap: 10px;
             font-weight: 500;
-            font-size: 14px;
+            h1{
+                font-size: clamp(25px, 2vw, 35px);
+            }
+            p{
+                font-size: clamp(18px, 2vw, 20px);
+            }
             button{
                 display: inline;
-                padding: 5px 15px;
-                margin-right: 10px;
+                padding: 10px 15px;
                 cursor: pointer;
-                border-radius: 10px;
+                font-size: clamp(16px, 2vw, 20px);
                 border: none;
                 color: $color-primary;
                 background-color: $color-secondary;
-                &:hover{
-                    box-shadow: 0 2px 8px rgb(0, 0, 0);
-                }
             }
             div{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;  
+                gap: 20px;  
             }
         }
         &_host{

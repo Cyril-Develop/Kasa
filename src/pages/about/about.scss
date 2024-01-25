@@ -1,9 +1,8 @@
 @import '../../sass/main.scss';
 
 .about_main{
-    width: 95%;
-    margin: 0 auto;
     &_collapse{
+        padding: 0 15px;
         margin: 40px auto;
         @media screen and (max-width: 550px){
             margin: 20px auto;
