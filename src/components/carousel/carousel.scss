@@ -30,10 +30,10 @@
     }
     .slideCount{
         position: absolute;
-        bottom: 25px;
+        bottom: -35px;
         left: 50%;
         transform: translateX(-50%);
-        color: $color-primary;
+        color: $color-secondary;
         font-weight: 500;
         font-size: clamp(14px, 2vw, 18px);
     }
