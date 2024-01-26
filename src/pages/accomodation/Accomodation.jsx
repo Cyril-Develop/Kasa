@@ -70,10 +70,10 @@ export default function Accomodation() {
 				</div>
 				<div className="accomodation_collapse">
 					<div className="accomodation_collapse_item">
-						<Collapse title={'Description'} content={description} />
+						<Collapse title={'Description'} content={description}/>
 					</div>
 					<div className="accomodation_collapse_item">
-						<Collapse title={'Équipements'} content={equipments} />
+						<Collapse title={'Équipements'} content={equipments}/>
 					</div>
 				</div>
 			</main>

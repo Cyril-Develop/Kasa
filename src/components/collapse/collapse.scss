@@ -6,13 +6,14 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin: 0 auto;
+    font-size: inherit;
     &_title{
         @include flex(row, space-between, center);
         background-color: $color-secondary;
         color: $color-primary;
         border-radius: 10px;
         font-weight: 500;
-        font-size: clamp(13px, 2vw, 18px);
+        font-size: clamp(13px, 1.8vw, 18px);
         padding: 10px 15px;
         cursor: pointer;
         .arrow{
@@ -38,7 +39,7 @@
         height: auto;
         padding: 10px;
         letter-spacing: 1px;
-        font-size: clamp(12px, 2vw, 16px);
+        font-size: clamp(12px, 1.8vw, 18px);
         color: $color-secondary;
         transition: visibility 0.5s ease-in-out,
                     opacity 0.5s ease-in-out,

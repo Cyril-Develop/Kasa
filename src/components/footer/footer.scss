@@ -8,5 +8,6 @@
     background-color: #000;
     &_copyright{
         color: $color-primary;
+        font-size: clamp(12px, 2vw, 24px);
     }
 }
