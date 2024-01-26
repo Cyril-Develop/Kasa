@@ -32,8 +32,11 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        padding: 20px;
+        white-space: nowrap;
+        padding: 10px;
         font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: clamp(14px, 3vw, 18px);
         color: $color-primary;
         background-color: $color-secondary;
