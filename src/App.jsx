@@ -2,11 +2,11 @@ import Home from './pages/home/Home';
 import NotFound from './pages/notFound/NotFound';
 import About from './pages/about/About';
 import Accomodation from './pages/accomodation/Accomodation';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Router } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
-		path: "/Kasa",
+		path: "/",
 		element: <Home />
 	},
 	{
@@ -26,7 +26,9 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<>
-			<RouterProvider router={router}/>
+			<Router basename="/kasa">
+				<RouterProvider router={router} />
+			</Router>
 		</>
 	);
 }
