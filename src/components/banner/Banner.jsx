@@ -17,7 +17,7 @@ export default function Banner() {
 
 	return (
 		<section className={aboutPage ? 'banner_about' : 'banner'}>
-			{!aboutPage && <p>Chez vous, partout et ailleurs</p>}
+			{!aboutPage && <h2>Chez vous, partout et ailleurs</h2>}
 		</section>
 	)
 }
