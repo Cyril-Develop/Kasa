@@ -2,7 +2,7 @@ import Home from './pages/home/Home';
 import NotFound from './pages/notFound/NotFound';
 import About from './pages/about/About';
 import Accomodation from './pages/accomodation/Accomodation';
-import { createBrowserRouter, RouterProvider, Router } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
 	{
@@ -26,9 +26,7 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<>
-			<Router basename="/kasa">
-				<RouterProvider router={router} />
-			</Router>
+			<RouterProvider router={router} />
 		</>
 	);
 }
