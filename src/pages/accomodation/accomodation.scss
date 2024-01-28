@@ -1,6 +1,16 @@
 @import '../../sass/main.scss';
 
+.accomodation_wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+    @media screen and (max-width: 500px){
+        min-height: calc(100vh - 20px);
+    }
+}
+
 .accomodation{
+    flex-grow: 1;
     &_content{
         @include flex(row, space-between, flex-start);
         color: $color-secondary;

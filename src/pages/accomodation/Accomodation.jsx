@@ -33,7 +33,7 @@ export default function Accomodation() {
 	const equipments = dataCurrentAccomodation[0].equipments;
 
 	return (
-		<>
+		<div className='accomodation_wrapper'>
 			<Header />
 			<Slider imageSlider={imageSlider} />
 			<main className="accomodation">
@@ -78,6 +78,6 @@ export default function Accomodation() {
 				</div>
 			</main>
 			<Footer />
-		</>
+		</div>
 	)
 }

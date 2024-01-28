@@ -1,8 +1,19 @@
 @import '../../sass/main.scss';
 
+.about{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+
+    @media screen and (max-width: 500px){
+        min-height: calc(100vh - 20px);
+    }
+}
+
 .about_main{
     width: 95%;
     margin: 0 auto;
+    flex-grow: 1;
     &_collapse{
         margin: 40px auto;
         @media screen and (max-width: 550px){
