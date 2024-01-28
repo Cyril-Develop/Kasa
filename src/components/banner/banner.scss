@@ -1,34 +1,19 @@
 @import '../../sass/main.scss';
 
-.banner{
-    position: relative;
+.banner, .banner_about{
     @include flex;
-    background-color: $color-secondary;
-    height: 223px;
+    background-image: linear-gradient(147deg, transparent 0%, transparent 8%,rgba(63, 106, 202,0.08) 8%, rgba(63, 106, 202,0.08) 46%,transparent 46%, transparent 100%),linear-gradient(107deg, transparent 0%, transparent 21%,rgba(63, 106, 202,0.08) 21%, rgba(63, 106, 202,0.08) 53%,transparent 53%, transparent 100%),linear-gradient(288deg, transparent 0%, transparent 35%,rgba(63, 106, 202,0.08) 35%, rgba(46, 81, 157, 0.08) 91%,transparent 91%, transparent 100%),linear-gradient(90deg, #a61c33,#a61c33);
+    height: 220px;
     padding: 20px;
-    margin: 43px auto;
+    margin: 40px auto;
+    width: 100%;
     @media screen and (max-width: 550px){
         margin: 20px auto;
         height: 120px;
     }
-    &_about{
-        position: relative;
-        @include flex;
-        height: 223px;
-        margin: 43px auto;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/about_cover.png');
-        background-position: center;
-        background-size: cover;
-        @media screen and (max-width: 550px){
-            margin: 20px auto;
-            height: 120px;
-        }
-    }
     h2{
         color: $color-primary;
-        font-size: clamp(20px, 4vw, 48px);
+        font-size: clamp(24px, 4vw, 48px);
         font-weight: 500;
-        text-align: center;
     }
 }
-

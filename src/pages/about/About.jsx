@@ -30,7 +30,7 @@ export default function About() {
 	]
 
 	return (
-		<div>
+		<div className='about'>
 			<Header />
 			<Banner />
 			<main className='about_main'>

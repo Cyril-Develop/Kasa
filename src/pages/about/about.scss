@@ -1,11 +1,25 @@
 @import '../../sass/main.scss';
 
-.about_main{
-    &_collapse{
-        padding: 0 15px;
-        margin: 40px auto;
-        @media screen and (max-width: 550px){
-            margin: 20px auto;
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+
+    @media screen and (max-width: 500px) {
+        min-height: calc(100vh - 20px);
+    }
+
+    &_main {
+        flex-grow: 1;
+        margin-bottom: 40px;
+
+        &_collapse {
+            padding: 0 15px;
+            margin: 40px auto;
+
+            @media screen and (max-width: 550px) {
+                margin: 20px auto;
+            }
         }
     }
 }
