@@ -3,13 +3,13 @@
 .carousel{
     position: relative;
     width: 95%;
-    padding-top: 56.25%;
     border-radius: 25px;
     overflow: hidden;
     margin: 43px auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    aspect-ratio: 16/9;
     @media screen and (max-width: 650px){
         margin: 20px auto;   
     }
