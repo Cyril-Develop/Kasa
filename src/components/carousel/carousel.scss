@@ -2,22 +2,21 @@
 
 .carousel{
     position: relative;
-    display: flex;
-    width: 100%;
-    height: 415px;
+    width: 95%;
+    padding-top: 56.25%;
     border-radius: 25px;
+    overflow: hidden;
+    margin: 43px auto;
     background-position: center;
     background-size: cover;
-    width: 95%;
-    margin: 43px auto;
+    background-repeat: no-repeat;
     @media screen and (max-width: 650px){
-        height: 200px;  
         margin: 20px auto;   
     }
     &_arrow{
         position: absolute;
         top: 50%;
-        height: 15%;
+        height: 10%;
         transform: translateY(-50%);
         cursor: pointer;
         &:active{
