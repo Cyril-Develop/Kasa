@@ -21,7 +21,7 @@ export default function Slider({ imageSlider }) {
         <section className='carousel'>
             {imageSlider.map((image, index) => {
                 return (
-                    <img key={index} src={image} alt={"image" + index} className={index === currentIndex ? 'carousel_slide active' : 'carousel_slide'} />
+                    <img key={index} src={image} alt={"image " + (currentIndex + 1)} className={index === currentIndex ? 'carousel_slide active' : 'carousel_slide'} />
                 )
             })}
             {imageSlider.length > 1 &&
