@@ -37,8 +37,7 @@ const datas = [
 			"https://cyril-develop.fr/kasa/images/appart-26.webp",
 			"https://cyril-develop.fr/kasa/images/appart-23.webp",
 			"https://cyril-develop.fr/kasa/images/appart-18.webp",
-			"https://cyril-develop.fr/kasa/images/appart-9.webp",
-			""
+			"https://cyril-develop.fr/kasa/images/appart-9.webp"
 		],
 		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
 		"host": {
